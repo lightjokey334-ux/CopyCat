@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMetrix Student – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__user">Scheau Denis</div>
+
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <a href="#" class="sidebar__link sidebar__link--active" aria-current="page">
+          <span class="sidebar__indicator" aria-hidden="true"></span>
+          <span class="material-icons-outlined sidebar__icon">home</span>
+          <span>Home</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <span class="material-icons-outlined sidebar__icon">description</span>
+          <span>Transcript</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <span class="material-icons-outlined sidebar__icon">person_outline</span>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__divider" aria-hidden="true"></div>
+
+      <nav class="sidebar__nav sidebar__nav--secondary" aria-label="Settings">
+        <a href="#" class="sidebar__link">
+          <span class="material-icons-outlined sidebar__icon">translate</span>
+          <span>Language</span>
+        </a>
+        <div class="sidebar__link sidebar__link--toggle">
+          <span class="material-icons-outlined sidebar__icon">dark_mode</span>
+          <span>Dark Mode</span>
+          <label class="toggle" aria-label="Toggle dark mode">
+            <input type="checkbox" id="darkModeToggle" checked />
+            <span class="toggle__track"></span>
+          </label>
+        </div>
+      </nav>
+
+      <footer class="sidebar__footer">
+        <div class="gmetrix-logo gmetrix-logo--small" aria-label="GMetrix Student">
+          <span class="gmetrix-logo__g">G</span><span class="gmetrix-logo__metrix">METRIX</span>
+          <span class="gmetrix-logo__student">Student</span>
+        </div>
+      </footer>
+    </aside>
+
+    <main class="main">
+      <section class="hero" aria-label="Welcome banner">
+        <div class="hero__content">
+          <div class="gmetrix-logo gmetrix-logo--hero">
+            <span class="gmetrix-logo__g">G</span><span class="gmetrix-logo__metrix">METRIX</span>
+          </div>
+          <h1 class="hero__title">New Student<br />Portal Experience</h1>
+        </div>
+        <div class="hero__image-wrap">
+          <svg class="hero__curve" viewBox="0 0 60 300" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M60,0 C8,45 52,95 28,150 C8,195 48,255 0,300 L0,0 Z" fill="#ffffff"/>
+          </svg>
+          <img
+            class="hero__image"
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85"
+            alt="Students collaborating around a laptop"
+            width="1200"
+            height="675"
+          />
+        </div>
+      </section>
+
+      <a href="python.html" class="resume" aria-label="Resume course">
+        <div class="resume__icon">
+          <span class="it-logo it-logo--python">
+            <span class="it-logo__mark">it</span>
+            <span class="it-logo__name">Python</span>
+          </span>
+        </div>
+        <div class="resume__text">
+          <p class="resume__label">Resume Course</p>
+          <p class="resume__course">Python v2</p>
+        </div>
+      </a>
+
+      <section class="quick-access" aria-label="Quick access">
+        <a href="#" class="quick-card">
+          <span class="material-icons-outlined quick-card__icon">person</span>
+          <span class="quick-card__label">Profile</span>
+        </a>
+        <a href="#" class="quick-card">
+          <span class="material-icons-outlined quick-card__icon">description</span>
+          <span class="quick-card__label">Transcript</span>
+        </a>
+      </section>
+
+      <section class="courses" aria-label="Your courses">
+        <article class="course-item">
+          <a href="#" class="course-card">
+            <span class="it-logo it-logo--course">
+              <span class="it-logo__mark">it</span>
+              <span class="it-logo__name it-logo__name--upper">Databases</span>
+            </span>
+          </a>
+          <p class="course-item__caption">Databases</p>
+        </article>
+        <article class="course-item">
+          <a href="#" class="course-card">
+            <span class="it-logo it-logo--course">
+              <span class="it-logo__mark">it</span>
+              <span class="it-logo__name it-logo__name--upper">Networking</span>
+            </span>
+          </a>
+          <p class="course-item__caption">Networking</p>
+        </article>
+        <article class="course-item">
+          <a href="python.html" class="course-card">
+            <span class="it-logo it-logo--course">
+              <span class="it-logo__mark">it</span>
+              <span class="it-logo__name it-logo__name--upper">Python</span>
+            </span>
+          </a>
+          <p class="course-item__caption">Python</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

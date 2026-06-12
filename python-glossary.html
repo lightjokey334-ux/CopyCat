@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Interactive Glossary – GMetrix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/learn.css" />
+</head>
+<body class="learn-page">
+  <header class="learn-topbar">
+    <a href="python.html" class="learn-topbar__back" aria-label="Back to Python course">
+      <span class="material-icons-outlined">chevron_left</span>
+    </a>
+    <a href="index.html" class="learn-topbar__logo" aria-label="GMetrix home">
+      <span class="learn-topbar__logo-g">G</span><span class="learn-topbar__logo-rest">METRIX</span>
+    </a>
+    <span class="learn-topbar__user">Scheau Denis</span>
+  </header>
+
+  <div class="learn-shell">
+    <aside class="learn-nav" id="learnNav" aria-label="Course navigation">
+      <div class="learn-nav__course">
+        <div class="learn-nav__course-row">
+          <span class="learn-nav__course-icon" aria-hidden="true">
+            <span class="it-mini"><span class="it-mini__mark">it</span></span>
+          </span>
+          <span class="learn-nav__course-title">Python v2</span>
+        </div>
+        <div class="learn-nav__progress" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" aria-label="Course progress">
+          <span class="learn-nav__progress-bar"></span>
+        </div>
+      </div>
+
+      <nav class="learn-nav__menu">
+        <a href="#" class="learn-nav__item learn-nav__item--active" data-activity-id="glossary" data-activity-type="glossary">
+          <span class="material-icons-outlined learn-nav__item-icon">list_alt</span>
+          <span>Python Interactive Glossary</span>
+        </a>
+        <a href="#" class="learn-nav__item" data-activity-id="workbook" data-activity-type="placeholder">
+          <span class="material-icons-outlined learn-nav__item-icon">edit</span>
+          <span>Python Workbook</span>
+        </a>
+        <a href="#" class="learn-nav__item" data-activity-id="support-files" data-activity-type="placeholder">
+          <span class="material-icons-outlined learn-nav__item-icon">description</span>
+          <span>Python Support Files</span>
+        </a>
+
+        <div id="domainNav" aria-label="Course domains"></div>
+      </nav>
+    </aside>
+
+    <button type="button" class="learn-nav-collapse" id="navCollapse" aria-label="Collapse sidebar" aria-expanded="true">
+      <span class="material-icons-outlined">chevron_left</span>
+    </button>
+
+    <main class="learn-main">
+      <header class="learn-main__head">
+        <h1 class="learn-main__title" id="learnMainTitle">Python Interactive Glossary</h1>
+        <div class="learn-main__toolbar">
+          <button type="button" class="learn-toolbar-btn learn-toolbar-btn--lk">
+            <span class="learn-toolbar-btn__lk">LK</span>
+            <span>LearnKey</span>
+          </button>
+          <button type="button" class="learn-toolbar-btn learn-toolbar-btn--report">View Activity Report</button>
+          <div class="learn-toolbar-nav">
+            <button type="button" class="learn-toolbar-nav__btn" aria-label="Previous">
+              <span class="material-icons-outlined">chevron_left</span>
+            </button>
+            <button type="button" class="learn-toolbar-nav__btn" aria-label="Next">
+              <span class="material-icons-outlined">chevron_right</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div id="learnView" class="learn-view">
+      <article class="glossary-panel learn-view__panel" id="viewGlossary" data-view="glossary">
+        <header class="glossary-panel__brands">
+          <div class="glossary-brand glossary-brand--lk">
+            <span class="glossary-brand__lk">LK</span>
+            <span class="glossary-brand__text">LearnKey</span>
+          </div>
+          <h2 class="glossary-panel__heading">IT Specialist – Python Interactive Glossary</h2>
+          <div class="glossary-brand glossary-brand--its">
+            <span class="glossary-brand__its-top">IT</span>
+            <span class="glossary-brand__its-sub">INFORMATION TECHNOLOGY<br />SPECIALIST</span>
+          </div>
+        </header>
+
+        <section class="glossary-activities" aria-labelledby="activities-heading">
+          <h3 id="activities-heading" class="glossary-activities__title">Select an Activity</h3>
+          <div class="glossary-activities__grid">
+            <button type="button" class="activity-card">
+              <span class="material-icons-outlined activity-card__icon">style</span>
+              <span class="activity-card__name">Flash Cards</span>
+              <span class="activity-card__desc">Flip through terms and definitions</span>
+            </button>
+            <button type="button" class="activity-card">
+              <span class="material-icons-outlined activity-card__icon">fact_check</span>
+              <span class="activity-card__name">Quiz</span>
+              <span class="activity-card__desc">Multiple choice questions</span>
+            </button>
+            <button type="button" class="activity-card">
+              <span class="material-icons-outlined activity-card__icon">compare_arrows</span>
+              <span class="activity-card__name">Matching</span>
+              <span class="activity-card__desc">Match terms with definitions</span>
+            </button>
+            <button type="button" class="activity-card">
+              <span class="material-icons-outlined activity-card__icon">grid_on</span>
+              <span class="activity-card__name">Crossword</span>
+              <span class="activity-card__desc">Solve the crossword puzzle</span>
+            </button>
+            <button type="button" class="activity-card">
+              <span class="material-icons-outlined activity-card__icon activity-card__icon--adventure">sports_esports</span>
+              <span class="activity-card__name">Adventure</span>
+              <span class="activity-card__desc">Defeat enemies with knowledge</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="glossary-filter">
+          <label class="glossary-filter__label" for="domainFilter">Filter by Domain:</label>
+          <select id="domainFilter" class="glossary-filter__select">
+            <option>All Domains</option>
+            <option>Domain 1</option>
+            <option>Domain 2</option>
+          </select>
+          <label class="glossary-filter__check">
+            <input type="checkbox" id="showDomainCol" />
+            Show Domain Column
+          </label>
+        </section>
+
+        <div class="glossary-table-wrap">
+          <table class="glossary-table">
+            <thead>
+              <tr>
+                <th class="glossary-table__check"><input type="checkbox" aria-label="Select all terms" /></th>
+                <th>Term</th>
+                <th>Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" aria-label="Select AND" /></td>
+                <td class="glossary-table__term">AND</td>
+                <td>A logical keyword where both sides of the comparison must be true in order for the statement to be true.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Select Append" /></td>
+                <td class="glossary-table__term">Append</td>
+                <td>An act that adds items to the end of a list or writes text to the end of a file.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Select Append Function" /></td>
+                <td class="glossary-table__term">Append Function</td>
+                <td>In the context of file management, a built-in function that adds content to an existing file.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Select Arithmetic Operator" /></td>
+                <td class="glossary-table__term">Arithmetic Operator</td>
+                <td>An operator used to perform basic mathematical operations.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Select Assert Test" /></td>
+                <td class="glossary-table__term">Assert Test</td>
+                <td>A type of unit test that compares two values and returns a True or False based on the result of the comparison.</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Select assertEqual" /></td>
+                <td class="glossary-table__term">assertEqual</td>
+                <td>An assert test that determines whether two values are equal to each other.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <section class="activity-view learn-view__panel is-hidden" id="viewStartTest" data-view="start-test" aria-live="polite">
+        <div class="activity-start">
+          <p class="activity-start__message">Looks like you haven't taken this test yet. Click the button below to get started!</p>
+          <button type="button" class="btn-start-test" id="btnStartTest">Start Test</button>
+        </div>
+      </section>
+
+      <section class="video-view learn-view__panel is-hidden" id="viewVideos" data-view="videos" aria-live="polite">
+        <div class="video-layout">
+          <div class="video-player-wrap">
+            <video class="video-player" id="courseVideo" controls playsinline preload="metadata"></video>
+            <div class="video-player-empty" id="videoPlayerEmpty">
+              <button type="button" class="video-play-fake" id="videoPlayFake" aria-label="Play video">
+                <span class="material-icons-outlined">play_arrow</span>
+              </button>
+            </div>
+            <p class="video-player-hint is-hidden" id="videoNoLinkHint">Link video lipsește — va fi adăugat.</p>
+          </div>
+          <aside class="video-playlist" id="videoPlaylist" aria-label="Video segments"></aside>
+        </div>
+      </section>
+
+      <section class="activity-view learn-view__panel is-hidden" id="viewPlaceholder" data-view="placeholder" aria-live="polite">
+        <div class="activity-start">
+          <p class="activity-start__message" id="placeholderMessage">Select an activity from the sidebar.</p>
+        </div>
+      </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/learn-data.js"></script>
+  <script src="js/learn.js"></script>
+</body>
+</html>

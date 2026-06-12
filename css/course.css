@@ -1,0 +1,264 @@
+/* Course detail page (Python) */
+
+:root {
+  --bg-row: #2a3039;
+  --btn-primary: #2b7cd3;
+  --btn-primary-hover: #256bb8;
+  --icon-folder: #c4a8e8;
+  --icon-exam: #c4a8e8;
+  --icon-guide: #5cb87a;
+}
+
+.main--course {
+  gap: 0;
+  padding-top: 18px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* —— Page header —— */
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  flex-shrink: 0;
+}
+
+.course-header__back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: -4px;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.course-header__back:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.course-header__back .material-icons-outlined {
+  font-size: 28px;
+}
+
+.course-header__badge {
+  background: var(--bg-white);
+  border-radius: 6px;
+  padding: 6px 10px;
+  flex-shrink: 0;
+}
+
+.it-logo--badge .it-logo__mark {
+  font-size: 14px;
+}
+
+.it-logo--badge .it-logo__name {
+  font-size: 9px;
+}
+
+.course-header__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* —— Sections —— */
+.course-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+}
+
+.course-section__heading {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.course-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* —— Row card —— */
+.course-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 56px;
+  padding: 10px 16px;
+  background: var(--bg-row);
+  border-radius: var(--radius);
+}
+
+.course-row__start {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
+}
+
+.course-row__icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.course-row__icon--folder,
+.course-row__icon--exam {
+  color: var(--icon-folder);
+}
+
+.course-row__icon--guide {
+  color: var(--icon-guide);
+}
+
+.course-row__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.course-row__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* —— LearnKey badge —— */
+.learnkey-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  background: var(--bg-white);
+  border: 1px solid #e2e5ea;
+  border-radius: 999px;
+  padding: 5px 14px 5px 6px;
+  margin-left: 8px;
+}
+
+.learnkey-badge__lk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a6eb5 0%, #2d8fd4 100%);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.learnkey-badge__name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a6eb5;
+  letter-spacing: -0.02em;
+}
+
+/* —— Buttons —— */
+.btn {
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.btn--primary {
+  min-width: 88px;
+  padding: 8px 20px;
+  background: var(--btn-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--btn-primary-hover);
+}
+
+a.btn--primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn--menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: #3a414c;
+  color: var(--text-secondary);
+  border-radius: 6px;
+}
+
+.btn--menu:hover {
+  background: #454d5a;
+  color: var(--text-primary);
+}
+
+.btn--menu .material-icons-outlined {
+  font-size: 22px;
+}
+
+/* —— Light mode —— */
+body.light-mode {
+  --bg-row: #fff;
+}
+
+body.light-mode .course-row {
+  border: 1px solid #e5e7eb;
+}
+
+body.light-mode .btn--menu {
+  background: #eef0f3;
+}
+
+@media (max-height: 760px) {
+  .main--course {
+    padding-top: 12px;
+  }
+
+  .course-header {
+    margin-bottom: 14px;
+  }
+
+  .course-header__title {
+    font-size: 22px;
+  }
+
+  .course-content {
+    gap: 14px;
+  }
+
+  .course-row {
+    min-height: 50px;
+    padding: 8px 14px;
+  }
+
+  .course-section__list {
+    gap: 6px;
+  }
+}

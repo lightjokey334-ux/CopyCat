@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMetrix Student – Python</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/course.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__user">Scheau Denis</div>
+
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <a href="index.html" class="sidebar__link">
+          <span class="material-icons-outlined sidebar__icon">home</span>
+          <span>Home</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <span class="material-icons-outlined sidebar__icon">description</span>
+          <span>Transcript</span>
+        </a>
+        <a href="#" class="sidebar__link">
+          <span class="material-icons-outlined sidebar__icon">person_outline</span>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__divider" aria-hidden="true"></div>
+
+      <nav class="sidebar__nav sidebar__nav--secondary" aria-label="Settings">
+        <a href="#" class="sidebar__link">
+          <span class="material-icons-outlined sidebar__icon">translate</span>
+          <span>Language</span>
+        </a>
+        <div class="sidebar__link sidebar__link--toggle">
+          <span class="material-icons-outlined sidebar__icon">dark_mode</span>
+          <span>Dark Mode</span>
+          <label class="toggle" aria-label="Toggle dark mode">
+            <input type="checkbox" id="darkModeToggle" checked />
+            <span class="toggle__track"></span>
+          </label>
+        </div>
+      </nav>
+
+      <footer class="sidebar__footer">
+        <div class="gmetrix-logo gmetrix-logo--small" aria-label="GMetrix Student">
+          <span class="gmetrix-logo__g">G</span><span class="gmetrix-logo__metrix">METRIX</span>
+          <span class="gmetrix-logo__student">Student</span>
+        </div>
+      </footer>
+    </aside>
+
+    <main class="main main--course">
+      <header class="course-header">
+        <a href="index.html" class="course-header__back" aria-label="Back to home">
+          <span class="material-icons-outlined">chevron_left</span>
+        </a>
+        <div class="course-header__badge" aria-hidden="true">
+          <span class="it-logo it-logo--badge">
+            <span class="it-logo__mark">it</span>
+            <span class="it-logo__name">Python</span>
+          </span>
+        </div>
+        <h1 class="course-header__title">Python</h1>
+      </header>
+
+      <div class="course-content">
+        <section class="course-section" aria-labelledby="section-course">
+          <h2 id="section-course" class="course-section__heading">Course</h2>
+          <div class="course-section__list">
+            <article class="course-row">
+              <div class="course-row__start">
+                <span class="material-icons-outlined course-row__icon course-row__icon--folder">folder</span>
+                <span class="course-row__title">Python v2</span>
+              </div>
+              <span class="learnkey-badge" aria-label="LearnKey">
+                <span class="learnkey-badge__lk">LK</span>
+                <span class="learnkey-badge__name">LearnKey</span>
+              </span>
+              <div class="course-row__actions">
+                <a href="python-glossary.html" class="btn btn--primary">Resume</a>
+                <button type="button" class="btn btn--menu" aria-label="More options">
+                  <span class="material-icons-outlined">more_vert</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="course-section" aria-labelledby="section-exams">
+          <h2 id="section-exams" class="course-section__heading">Practice Exams</h2>
+          <div class="course-section__list">
+            <article class="course-row">
+              <div class="course-row__start">
+                <span class="material-icons-outlined course-row__icon course-row__icon--exam">edit_note</span>
+                <span class="course-row__title">ITS Python (Next Gen) Practice Exam 1</span>
+              </div>
+              <div class="course-row__actions">
+                <button type="button" class="btn btn--primary">Start</button>
+              </div>
+            </article>
+            <article class="course-row">
+              <div class="course-row__start">
+                <span class="material-icons-outlined course-row__icon course-row__icon--exam">edit_note</span>
+                <span class="course-row__title">ITS Python (Next Gen) Practice Exam 2</span>
+              </div>
+              <div class="course-row__actions">
+                <button type="button" class="btn btn--primary">Start</button>
+              </div>
+            </article>
+            <article class="course-row">
+              <div class="course-row__start">
+                <span class="material-icons-outlined course-row__icon course-row__icon--exam">edit_note</span>
+                <span class="course-row__title">ITS Python Practice Exam 1</span>
+              </div>
+              <div class="course-row__actions">
+                <button type="button" class="btn btn--primary">Start</button>
+                <button type="button" class="btn btn--menu" aria-label="More options">
+                  <span class="material-icons-outlined">more_vert</span>
+                </button>
+              </div>
+            </article>
+            <article class="course-row">
+              <div class="course-row__start">
+                <span class="material-icons-outlined course-row__icon course-row__icon--exam">edit_note</span>
+                <span class="course-row__title">ITS Python Practice Exam 2</span>
+              </div>
+              <div class="course-row__actions">
+                <button type="button" class="btn btn--primary">Start</button>
+                <button type="button" class="btn btn--menu" aria-label="More options">
+                  <span class="material-icons-outlined">more_vert</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="course-section" aria-labelledby="section-guide">
+          <h2 id="section-guide" class="course-section__heading">Study Guide</h2>
+          <div class="course-section__list">
+            <article class="course-row">
+              <div class="course-row__start">
+                <span class="material-icons-outlined course-row__icon course-row__icon--guide">checklist</span>
+                <span class="course-row__title">Python Study Guide</span>
+              </div>
+              <div class="course-row__actions">
+                <button type="button" class="btn btn--primary">Start</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
