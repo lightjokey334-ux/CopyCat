@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITS Python Practice Exam 1 - Answer Key</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/practice-exam.css" />
+</head>
+<body class="exam-page">
+  <header class="exam-topbar">
+    <a href="../python.html" class="exam-topbar__back" aria-label="Back to Python course">
+      <span class="material-icons-outlined">chevron_left</span>
+    </a>
+    <div class="exam-brand" aria-label="GMetrix Student">
+      <span class="exam-brand__g">G</span><span class="exam-brand__text">METRIX</span>
+    </div>
+    <div class="exam-topbar__title">Python</div>
+    <div class="exam-topbar__user">Scheau Denis</div>
+  </header>
+
+  <main class="exam-shell">
+    <section class="exam-summary" aria-labelledby="examTitle">
+      <div>
+        <p class="exam-summary__eyebrow">ITS Python Practice Exam 1</p>
+        <h1 id="examTitle">Toate intrebarile si raspunsurile corecte</h1>
+      </div>
+      <div class="exam-summary__stats" aria-label="Exam stats">
+        <span><strong id="questionCount">42</strong> intrebari</span>
+        <span><strong id="answeredCount">0</strong> raspunse</span>
+      </div>
+    </section>
+
+    <section class="exam-tools" aria-label="Question tools">
+      <label class="exam-search">
+        <span class="material-icons-outlined" aria-hidden="true">search</span>
+        <input id="examSearch" type="search" placeholder="Cauta dupa text, ID sau raspuns" autocomplete="off" />
+      </label>
+      <button type="button" class="exam-tool-btn exam-tool-btn--verify" id="verifyExam">
+        <span class="material-icons-outlined" aria-hidden="true">fact_check</span>
+        <span>Verifica testul</span>
+      </button>
+      <button type="button" class="exam-tool-btn" id="resetExam">
+        <span class="material-icons-outlined" aria-hidden="true">restart_alt</span>
+        <span>Reseteaza testul</span>
+      </button>
+    </section>
+
+    <div class="exam-layout">
+      <aside class="exam-index" aria-label="Lista intrebari">
+        <div class="exam-index__head">Questions</div>
+        <div class="exam-index__grid" id="questionIndex"></div>
+      </aside>
+
+      <section class="exam-reader" aria-live="polite">
+        <div class="exam-reader__nav">
+          <button type="button" class="exam-nav-btn" id="prevQuestion" aria-label="Previous question">
+            <span class="material-icons-outlined">chevron_left</span>
+            Previous
+          </button>
+          <div class="exam-reader__position" id="questionPosition">1/42</div>
+          <button type="button" class="exam-nav-btn" id="nextQuestion" aria-label="Next question">
+            Next
+            <span class="material-icons-outlined">chevron_right</span>
+          </button>
+        </div>
+
+        <article class="question-panel" id="questionPanel"></article>
+      </section>
+    </div>
+  </main>
+
+  <script src="../js/python-practice-exam-1.js"></script>
+</body>
+</html>
